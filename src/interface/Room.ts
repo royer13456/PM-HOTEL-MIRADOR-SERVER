@@ -1,4 +1,4 @@
-export interface Habitacion {
+export interface Room {
   id?: string | number;
   image_url: string;
   title: string;

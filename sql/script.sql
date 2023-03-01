@@ -3,7 +3,7 @@ CREATE DATABASE hotel_torre_torre;
 USE hotel_torre_torre;
 
 CREATE TABLE
-    habitacion(
+    room(
         id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
         image_url TEXT,
         title VARCHAR(200),
@@ -13,4 +13,4 @@ CREATE TABLE
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
 
-DESCRIBE habitacion;
+DESCRIBE room ;

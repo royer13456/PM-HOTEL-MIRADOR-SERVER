@@ -2,6 +2,7 @@ import express, { Application } from "express"
 
 // Routes
 import indexRoutes from "./routes/index.routes";
+import roomRoutes from "./routes/room.routes";
 
 export class App {
 
@@ -24,6 +25,7 @@ export class App {
 
   routes() {
     this.app.use(indexRoutes);
+    this.app.use('/api/room', roomRoutes)
   }
 
   listen() {
