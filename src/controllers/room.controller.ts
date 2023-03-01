@@ -5,7 +5,7 @@ import { Room } from "./../interface/Room";
 export const getRooms = async (req: Request, res: Response) => {
   try {
     const conn = connect();
-    const rooms = await conn.query("SELECT * FROM rooms");
+    const rooms = await conn.query("SELECT * FROM room");
     return res.json(rooms[0]);
   } catch (error) {
     res.status(404).send(error);
