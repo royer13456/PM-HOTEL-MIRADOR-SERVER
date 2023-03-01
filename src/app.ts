@@ -3,6 +3,8 @@ import express, { Application } from "express"
 // Routes
 import indexRoutes from "./routes/index.routes";
 import roomRoutes from "./routes/room.routes";
+// Cors
+import cors from "cors";
 
 export class App {
 
@@ -21,6 +23,7 @@ export class App {
 
   middlewares() {
     this.app.use(express.json());
+    this.app.use(cors())
   }
 
   routes() {
