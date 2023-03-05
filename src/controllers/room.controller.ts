@@ -53,6 +53,6 @@ export const updateRoom = async (req: Request, res: Response) => {
 export const deleteRoom = async (req: Request, res: Response) => {
   const conn = connect();
   const { id } = req.params;
-  await conn.query('DELETE FROM room WHERE id=?',[id]);
+  await conn.query('DELETE FROM room WHERE id=?', [id]);
   res.send("DELETE ROOM")
 }
