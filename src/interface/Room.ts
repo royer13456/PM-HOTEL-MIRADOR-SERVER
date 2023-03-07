@@ -1,3 +1,4 @@
+/* Defining the shape of the data that will be returned from the API. */
 export interface Room {
   id?: string | number;
   image_url: string;
