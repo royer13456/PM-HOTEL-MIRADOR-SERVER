@@ -1,4 +1,4 @@
-import { request, Request, Response } from "express"
+import { Request, Response } from "express"
 import { connect } from "./../database";
 import { Room } from "./../interface/Room";
 

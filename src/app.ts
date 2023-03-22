@@ -3,6 +3,7 @@ import express, { Application } from "express"
 // Routes
 import indexRoutes from "./routes/index.routes";
 import roomRoutes from "./routes/room.routes";
+import recommendationRoutes from "./routes/recommendation.routes";
 // Cors
 import cors from "cors";
 
@@ -28,7 +29,8 @@ export class App {
 
   routes() {
     this.app.use(indexRoutes);
-    this.app.use('/api/room', roomRoutes)
+    this.app.use('/api', roomRoutes);
+    this.app.use('/api', recommendationRoutes);
   }
 
   listen() {

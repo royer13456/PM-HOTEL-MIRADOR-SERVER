@@ -14,3 +14,12 @@ CREATE TABLE
     );
 
 DESCRIBE room ;
+
+CREATE TABLE recommendation(
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    image_url TEXT,
+    title VARCHAR(200),
+    price DECIMAL(7, 2),
+    visible TINYINT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

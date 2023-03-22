@@ -3,14 +3,14 @@ const router = Router();
 // Controllers
 import { getRooms, getRoom, createRoom, updateRoom, deleteRoom } from "./../controllers/room.controller";
 
-router.get('/', getRooms);
+router.get('/room', getRooms);
 
-router.get('/:id', getRoom);
+router.get('/room/:id', getRoom);
 
-router.post('/', createRoom);
+router.post('/room', createRoom);
 
-router.patch('/:id', updateRoom);
+router.patch('/room/:id', updateRoom);
 
-router.delete('/:id', deleteRoom);
+router.delete('/room/:id', deleteRoom);
 
 export default router;
