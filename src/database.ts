@@ -6,7 +6,8 @@ export const connect = () => {
     user: 'root',
     password: '1234',
     database: 'hotel_torre_torre',
-    port: 3306
+    port: 3306,
+    connectionLimit: undefined
   })
   return connection;
 }
