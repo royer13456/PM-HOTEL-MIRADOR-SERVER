@@ -3,8 +3,9 @@ export interface Room {
   id?: string | number;
   image_url: string;
   title: string;
-  price: number;
+  category: string;
   description: string;
+  price: number;
   visible: boolean;
   created_at: Date;
 }

@@ -4,7 +4,8 @@ import express, { Application } from "express"
 import indexRoutes from "./routes/index.routes";
 import roomRoutes from "./routes/room.routes";
 import recommendationRoutes from "./routes/recommendation.routes";
-import contactMessage from "./routes/contact.routes"
+import contactMessageRoutes from "./routes/contact.routes"
+import reservationsRoutes from "./routes/reserve.routes"
 // Cors
 import cors from "cors";
 
@@ -32,7 +33,8 @@ export class App {
     this.app.use(indexRoutes);
     this.app.use('/api', roomRoutes);
     this.app.use('/api', recommendationRoutes);
-    this.app.use('/api', contactMessage);
+    this.app.use('/api', contactMessageRoutes);
+    this.app.use('/api', reservationsRoutes);
   }
 
   listen() {
