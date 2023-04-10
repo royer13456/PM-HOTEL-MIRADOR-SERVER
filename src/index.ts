@@ -1,6 +1,6 @@
 import { App } from "./app";
 
-const main =  () => {
+const main = () => {
   const app = new App();
   app.listen();
 }
