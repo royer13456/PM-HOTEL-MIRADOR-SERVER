@@ -1,11 +1,10 @@
 export interface Reservation {
   id: string | number;
+  id_room:string;
   code: string;
-  from: string;
-  to: string;
-  n_rooms: number;
+  check_in_date: string;
+  check_out_date: string;
   names: string;
   email: string;
-  phone: string;
   total: number;
 }
