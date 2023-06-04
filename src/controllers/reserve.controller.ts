@@ -49,3 +49,14 @@ export const updateReserve = async (req: Request, res: Response) => {
     res.status(404).send(error);
   }
 }
+
+export const getReservedRooms = async (req: Request, res: Response) => {
+  try {
+    const conn = connect();
+    const dates = await conn.query('SELECT DISTINCT check_in_date, check_out_date FROM reservation WHERE check_in_date != check_out_date');
+    return res.json(dates[0])
+  } catch (error) {
+    res.status(404).send(error)
+  }
+
+}

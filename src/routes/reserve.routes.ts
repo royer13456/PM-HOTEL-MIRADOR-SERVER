@@ -5,7 +5,8 @@ import {
   getReserves,
   getReserve,
   createReserve,
-  updateReserve
+  updateReserve,
+  getReservedRooms
 } from "./../controllers/reserve.controller";
 
 /**
@@ -133,5 +134,7 @@ router.post('/reserve', createReserve);
  *         description: Error interno del servidor.
  */
 router.patch('/reserve/:id', updateReserve);
+
+router.get('/reserved',getReservedRooms)
 
 export default router;
