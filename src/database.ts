@@ -2,11 +2,11 @@ import { createPool } from "mysql2/promise";
 
 export const connect = () => {
   const connection = createPool({
-    host: 'containers-us-west-84.railway.app',
+    host: 'containers-us-west-66.railway.app',
     user: 'root',
-    password: 'lGJHNN5WaNdGRaQK5oeP',
+    password: 'SV2vUDvqzM2pDWaVX4jM',
     database: 'railway',
-    port: 7857,
+    port: 6795,
     connectionLimit: undefined
   })
   return connection;
